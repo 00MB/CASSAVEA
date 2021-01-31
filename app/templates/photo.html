@@ -17,20 +17,50 @@
   <body style="font-family: 'Lato', sans-serif">
     <img src="../static/img/casSAVEa_Logo-transp 1.png" />
     <h1>Take Photo</h1>
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <canvas id="canvas" class="d-none"></canvas>
+    <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio>
+    <br>
     <button
-      onclick="location.href = '/photo';"
+      onclick="capturePhoto()"
       class="button"
       style="outline: none"
     >
       <img src="../static/img/Camera.png" />
     </button>
+    <hr />
     <h1>Upload</h1>
-    <button
-      onclick="location.href = '/photo';"
+    <input type="file" id="actual-btn" hidden/>
+    <label
+      for="actual-btn"
       class="button"
       style="outline: none"
     >
       <img src="../static/img/Upload.png" />
-    </button>
+    </label>
+    <div id="file-chosen">No file chosen</div>
   </body>
+  <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+  <script>
+    const webcamElement = document.getElementById('webcam');
+    const canvasElement = document.getElementById('canvas');
+    const snapSoundElement = document.getElementById('snapSound');
+    const webcam = new Webcam(webcamElement, 'enviroment', canvasElement, snapSoundElement);
+    webcam.start()
+    .then(result =>{
+    })
+    .catch(err => {
+        console.log(err);
+    });
+    function capturePhoto() {
+        let picture = webcam.snap();
+    }
+
+    // Upload photo
+    const actualBtn = document.getElementById('actual-btn');
+    const fileChosen = document.getElementById('file-chosen');
+    actualBtn.addEventListener('change', function(){
+      fileChosen.textContent = this.files[0].name
+    })
+  </script>
 </html>

@@ -1,1 +1,1 @@
-worker: python cassavea.py
+worker: python app/routes.py
