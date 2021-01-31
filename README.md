@@ -1,6 +1,12 @@
 http://40.87.48.18/
 cassavea.tech
 
+CONTRIBUTERS: 
+Angler#5664
+arnold#1095
+avinashupadhyaya#4664
+Michael Beer#7583
+
 ## Inspiration
 Cassava leaves are the **2nd largest carbohydrate source in Africa**, and heavily dependant on as a security crop by African farmers. But there is a problem! Numerous diseases are spreading from crop to crop, costing farmers up to **$1 billion every year in wasted crops** due to disease. This ultimately leads to increased poverty rates and people going hungry.
 
