@@ -15,41 +15,41 @@
     <h1>YOUR PLANT IS:</h1>
     {% if infected == "True" %}
     <h1 style="color: red">INFECTED</h1>
-    <br />
-    <div class="stats">
-      <div class="group">
-        <p>Healthy: {{ probabilities['Healthy'] }}%</p>
-        <div class="meter Healthy">
-          <span style="width: {{ probabilities['Healthy'] }}%"></span>
-        </div>
-      </div>
-      <div class="group">
-        <p>CMD: {{ probabilities['CMD'] }}%</p>
-        <div class="meter CMD">
-          <span style="width: {{ probabilities['CMD'] }}%"></span>
-        </div>
-      </div>
-      <div class="group">
-        <p>CGM: {{ probabilities['CGM'] }}%</p>
-        <div class="meter CGM">
-          <span style="width: {{ probabilities['CGM'] }}%"></span>
-        </div>
-      </div>
-      <div class="group">
-        <p>CBSD: {{ probabilities['CBSD'] }}%</p>
-        <div class="meter CBSD">
-          <span style="width: {{ probabilities['CBSD'] }}%"></span>
-        </div>
-      </div>
-      <div class="group">
-        <p>CBB: {{ probabilities['CBB'] }}%</p>
-        <div class="meter CBB">
-          <span style="width: {{ probabilities['CBB'] }}%"></span>
-        </div>
-      </div>
-    </div>
     {% else %}
     <h1 style="color: green">HEALTHY</h1>
     {% endif %}
+    <br />
+    <div class="stats">
+      <div class="group">
+        <p>Healthy: {{ probabilities[4] }}%</p>
+        <div class="meter Healthy">
+          <span style="width: {{ probabilities[4] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CMD: {{ probabilities[3] }}%</p>
+        <div class="meter CMD">
+          <span style="width: {{ probabilities[3] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CGM: {{ probabilities[2] }}%</p>
+        <div class="meter CGM">
+          <span style="width: {{ probabilities[2] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CBSD: {{ probabilities[1] }}%</p>
+        <div class="meter CBSD">
+          <span style="width: {{ probabilities[1] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CBB: {{ probabilities[0] }}%</p>
+        <div class="meter CBB">
+          <span style="width: {{ probabilities[0] }}%"></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
