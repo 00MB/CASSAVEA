@@ -1,4 +1,4 @@
-# CASSAVEA#
+# CASSAVEA
 
 As the 2nd largest provider of carbohydrates in Africa, cassava is a key food security crop grown by small-holder farmers because it can withstand harsh conditions. At least 80% of small-holder farmer households in Sub-Saharan Africa grow cassava and viral diseases are major sources of poor yields.
 
