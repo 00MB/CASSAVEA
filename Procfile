@@ -1,1 +1,1 @@
-worker: python app/routes.py
+worker: flask run
