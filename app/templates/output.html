@@ -3,15 +3,53 @@
   <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
     rel="stylesheet"
   />
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="../static/css/style.css" />
-  <body>
-    <div class="">
-      <h1>CASSAVEA</h1>
+  <body style="font-family: 'Lato', sans-serif; padding-bottom: 50px">
+    <img src="../static/img/casSAVEa_Logo-transp 1.png" />
+    <br />
+    <h1>YOUR PLANT IS:</h1>
+    {% if infected == "True" %}
+    <h1 style="color: red">INFECTED</h1>
+    <br />
+    <div class="stats">
+      <div class="group">
+        <p>Healthy: {{ probabilities['Healthy'] }}%</p>
+        <div class="meter Healthy">
+          <span style="width: {{ probabilities['Healthy'] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CMD: {{ probabilities['CMD'] }}%</p>
+        <div class="meter CMD">
+          <span style="width: {{ probabilities['CMD'] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CGM: {{ probabilities['CGM'] }}%</p>
+        <div class="meter CGM">
+          <span style="width: {{ probabilities['CGM'] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CBSD: {{ probabilities['CBSD'] }}%</p>
+        <div class="meter CBSD">
+          <span style="width: {{ probabilities['CBSD'] }}%"></span>
+        </div>
+      </div>
+      <div class="group">
+        <p>CBB: {{ probabilities['CBB'] }}%</p>
+        <div class="meter CBB">
+          <span style="width: {{ probabilities['CBB'] }}%"></span>
+        </div>
+      </div>
     </div>
+    {% else %}
+    <h1 style="color: green">HEALTHY</h1>
+    {% endif %}
   </body>
 </html>
