@@ -3,4 +3,4 @@ __pycache__
 Dockerfile
 cassavea.jpg
 model.h5
-venv/__pycache__
+app/__pycache__
