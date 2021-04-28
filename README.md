@@ -1,3 +1,14 @@
+http://40.87.48.18/
+cassavea.tech
+
+Demo Video: https://www.youtube.com/watch?v=x59ExEU0tDw&feature=youtu.be&ab_channel=MichaelBeer
+
+CONTRIBUTERS: 
+Angler#5664
+arnold#1095
+avinashupadhyaya#4664
+Michael Beer#7583
+
 ## Inspiration
 Cassava leaves are the **2nd largest carbohydrate source in Africa**, and heavily dependant on as a security crop by African farmers. But there is a problem! Numerous diseases are spreading from crop to crop, costing farmers up to **$1 billion every year in wasted crops** due to disease. This ultimately leads to increased poverty rates and people going hungry.
 
@@ -10,9 +21,9 @@ First, we tackled the core of the project which was the **machine learning algor
 ## Challenges we ran into
 The main challenge we ran into was the machine learning algorithm, as we knew it would take a **long time to train** in order to be effective. How we managed to solve this problem was by using **data analysis** with R to review and graph the data, and by testing various sizes of datasets we were able to predict the optimal number of epochs so that the model would not underfit nor overfit.
 
-Another challenge we came across was connecting all these stages together, especially sending and receiving data from the model. We solved this problem by creating a **REST API** so that we can limit the time between sending and receiving the model, so the user has a faster time to receive the data.
+Another challenge we came across was connecting all these stages together, especially sending and receiving data from the model. We solved this problem by saving the model as *h5*  file and then integrating it with Flask so that we can limit the model training time, so the user has a faster time to receive the data.
 
-## Accomplishments that I'm proud of
+## Accomplishments that we're proud of
 As a team, we knew coordination would be a challenge as we are an **international team** from 3 different continents and hence, **3 extreme different time zones**. We stepped up to the challenge and made it work, by delegating each person with tasks of equal work, we managed to lower the workload all while keeping **good communication** all while being up to 7 hours apart. Another accomplishment was the model accuracy, we trained our model to 80% accuracy, which for our large dataset and multiple classifications, was quite a good result. Especially as we only had a fixed amount of time for the model to train.
 
 ## What we learned
